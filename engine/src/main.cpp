@@ -9,7 +9,7 @@ int main(int argc, char* argv[])
 		xy::global::GetWindow()->PollEvents();
 	}
 
-	xy::Destroy();
+	xy::Shutdown();
 
 	return 0;
 }

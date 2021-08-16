@@ -5,5 +5,5 @@
 namespace xy
 {
 	XY_API void Init();
-	XY_API void Destroy();
+	XY_API void Shutdown();
 }

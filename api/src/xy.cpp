@@ -10,7 +10,7 @@ namespace xy
 		*p_window = new Window_GLOB();
 	}
 
-	void Destroy()
+	void Shutdown()
 	{
 		Window_GLOB** p_window = global::GetWindowPointer();
 		delete *p_window;
