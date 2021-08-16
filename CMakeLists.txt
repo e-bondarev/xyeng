@@ -6,5 +6,7 @@ set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 
 project(xyeng)
 
+set(XY_API_DYNAMIC True)
+
 add_subdirectory(api)
 add_subdirectory(engine)

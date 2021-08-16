@@ -6,11 +6,13 @@ namespace xy
 {
 	void Init()
 	{
-		global::CreateWindow();
+		Window_GLOB** p_window = global::GetWindowPointer();
+		*p_window = new Window_GLOB();
 	}
 
 	void Destroy()
 	{
-		global::DestroyWindow();
+		Window_GLOB** p_window = global::GetWindowPointer();
+		delete *p_window;
 	}
 }

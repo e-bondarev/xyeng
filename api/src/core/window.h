@@ -26,6 +26,7 @@ namespace xy
 	namespace global
 	{
 		XY_API Window_GLOB* GetWindow();
+		XY_API Window_GLOB** GetWindowPointer();
 		XY_API void CreateWindow();
 		XY_API void DestroyWindow();
 	}

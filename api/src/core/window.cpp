@@ -36,17 +36,22 @@ namespace xy
 	{
 		Window_GLOB* Window;
 
-		XY_API Window_GLOB* GetWindow()
+		Window_GLOB* GetWindow()
 		{
 			return Window;
 		}
 
-		XY_API void CreateWindow()
+		Window_GLOB** GetWindowPointer()
+		{
+			return &Window;
+		}
+
+		void CreateWindow()
 		{
 			Window = new Window_GLOB();
 		}
 
-		XY_API void DestroyWindow()
+		void DestroyWindow()
 		{
 			delete Window;
 		}		
